@@ -1,3 +1,4 @@
+# variables for security group
 variable "description" {
   description = "Description for the security group"
   type        = string
@@ -5,6 +6,11 @@ variable "description" {
 
 variable "vpc_id" {
   description = "ID of the VPC where the security group will be created"
+  type        = string
+}
+
+variable "project_name" {
+  description = "The name of the project"
   type        = string
 }
 
